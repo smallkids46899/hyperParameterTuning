@@ -1,0 +1,51 @@
+#:kivy 1.0
+
+# Widget definitions
+
+# Labels
+<Title@Label>
+    size_hint_y: .2
+    font_size: 40
+
+# Buttons
+<AquaButton@Button>
+    background_color: (0, 1, 0, 1)
+    font_size: 16
+
+<SmallButton@AquaButton>
+    size_hint_y: .2
+
+<BackButton@SmallButton>
+    text: 'Back'
+    on_press: app.setScreen('main')
+
+<VolUpButton@SmallButton>
+    text: 'Volume++'
+    on_press: app.volUp()
+
+<VolDownButton@SmallButton>
+    text: 'Volume--'
+    on_press: app.volDown()
+
+<NextButton@SmallButton>
+    text: 'Next'
+
+<PrevButton@SmallButton>
+    text: 'Prev'
+
+<OkButton@SmallButton>
+    text: 'OK'
+
+<SettingsButton@SmallButton>
+    text: 'Settings'
+
+<PlayOrStopButton@SmallButton>
+    text: 'Play/Stop'
+    on_press: app.playOrStop()
+
+# Others
+<VSpace20@Label>
+    size_hint_y: .20
+
+<VSpace80@Label>
+    size_hint_y: .80
