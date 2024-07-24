@@ -1,0 +1,16 @@
+#:kivy 1.0
+
+<MediaPlayerScreen>
+	AquaScreen
+
+		FilledLeftLayout
+
+        CenterLayout
+		    Title
+			    text: 'Media Player'
+
+			FileChooserListView
+			    size_hint_y: .8
+			    on_selection: app.onListItemSelected(self.selection)
+
+        FilledRightLayout
