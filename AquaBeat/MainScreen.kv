@@ -1,0 +1,31 @@
+#:kivy 1.0
+
+<MainScreen>
+
+    AquaScreen
+        orientation: 'vertical'
+
+        BoxLayout
+            size_hint_y: .25
+            padding: 45
+
+            Title
+                text: 'AquaBeat'
+
+        BoxLayout
+            size_hint_y: .5
+
+            AquaButton
+		        text: 'MASS STORAGE'
+		        on_press: root.manager.current = 'storage'
+
+	        AquaButton
+	    	    text: 'MEDIA PLAYER'
+	    	    on_press: root.manager.current = 'mediaPlayer'
+
+	        AquaButton
+	    	    text: 'BLUETOOTH MODE'
+	    	    on_press: root.manager.current = 'bluetooth'
+
+	    BoxLayout
+	        size_hint_y: .25
