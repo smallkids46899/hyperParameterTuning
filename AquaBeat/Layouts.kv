@@ -1,0 +1,39 @@
+#:kivy 1.0
+
+# Layout definitions
+
+# General left layout
+# private
+<LeftLayout@BoxLayout>
+    orientation: 'vertical'
+    size_hint_x: .2
+    BackButton
+
+
+# Left layout with only a Back button and placeholders
+<SimpleLeftLayout@LeftLayout>
+    VSpace80
+
+# Left layout with additional Settings and Prev buttons
+<FilledLeftLayout@LeftLayout>
+    VSpace20
+    PlayOrStopButton
+    VSpace20
+    PrevButton
+
+<CenterLayout@BoxLayout>
+    orientation: 'vertical'
+	size_hint_x: .6
+
+# Empty right layout
+<RightLayout@BoxLayout>
+    orientation: 'vertical'
+	size_hint_x: .2
+
+# Right layout with volume and next buttons
+<FilledRightLayout@RightLayout>
+	VolUpButton
+    VSpace20
+    VolDownButton
+    VSpace20
+    NextButton
